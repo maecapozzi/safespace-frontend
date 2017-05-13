@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
   background-color: #222;
   height: 150px;
@@ -16,6 +11,17 @@
 
 .App-intro {
   font-size: large;
+}
+
+.Navbar {
+  width: 100%;
+  border-bottom: solid 1px black;
+}
+
+.List {
+  margin-left: 10em;
+  margin-right: 10em;
+  text-align: center;
 }
 
 @keyframes App-logo-spin {

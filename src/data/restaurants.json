@@ -1,0 +1,11 @@
+{
+  "restaurants": [
+    {"name": "La Lupe", "city": "Brooklyn"}
+  ],
+  "bars": [
+    {"name": "Miles", "city": "Brooklyn"}
+  ],
+  "stores": [
+    {"name": "Wisdom", "city": "Brooklyn"}
+  ]
+}
