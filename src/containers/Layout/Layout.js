@@ -7,7 +7,6 @@ import '../../styles/App.css'
 
 class Layout extends Component {
   render() {
-    const title = "Safespace"
     return (
       <div className="Layout">
         <Navbar />
