@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
-import Navbar from './Navbar';
-import List from './List';
-import './App.css';
+import Layout from './containers/Layout/Layout';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
+import './styles/App.css';
 
 class App extends Component {
   render() {
-    const title = "Safespace"
     return (
-      <div className="App">
-        <Navbar title={title} />
+      <div>
+        <Layout />
       </div>
     );
   }
 }
 
+injectTapEventPlugin();
 export default App;

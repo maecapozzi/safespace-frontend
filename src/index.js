@@ -1,29 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-} from 'react-router-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import App from './App';
-import BusinessIndex from './pages/BusinessIndex'
-import BusinessProfile from './pages/BusinessProfile'
-import './index.css';
+
+import App from './App'
+import './styles/index.css'
 
 ReactDOM.render(
-  <Router>
-    <div>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/businesses">Businesses</Link></li>
-        <li><Link to="/business">Business</Link></li>
-      </ul>
-
-      <Route exact path="/" component={App}></Route>
-      <Route path="/businesses" component={BusinessIndex}></Route>
-      <Route path="/business" component={BusinessProfile}></Route>
-    </div>
-  </Router>,
+  <App />,
   document.getElementById('root')
-);
+)
