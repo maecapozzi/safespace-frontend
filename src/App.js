@@ -4,6 +4,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import './styles/App.css';
 
+
 class App extends Component {
   render() {
     return (
