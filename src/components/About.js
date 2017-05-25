@@ -1,14 +1,14 @@
 import React from 'react'
 
-import AppBar from 'material-ui/AppBar'
+import './App/App.css'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
-const Footer = () => (
+const About = () => (
     <MuiThemeProvider>
-      <AppBar
-        showMenuIconButton={false}
-      />
+      <div className="App">
+        <h1>About</h1>
+      </div>
     </MuiThemeProvider>
 )
 
-export default Footer
+export default About

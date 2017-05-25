@@ -1,27 +1,46 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
-import './App.css'
+
+import AppBar from 'material-ui/AppBar';
+import About from '../About'
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 import Footer from '../Footer'
-import AddTodo from '../../containers/AddTodo'
-import VisibleTodoList from '../../containers/VisibleTodoList'
+import Homepage from '../Homepage'
+import injectTapEventPlugin from 'react-tap-event-plugin';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+import './App.css'
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <AddTodo />
-        <VisibleTodoList />
-        <Footer />
-      </div>
+        <MuiThemeProvider>
+          <div>
+            <AppBar />
+            <Router>
+              <div>
+                <ul>
+                  <li><Link to="/">Home</Link></li>
+                  <li><Link to="/about">About</Link></li>
+                </ul>
+
+                <hr />
+
+                <Route exact path="/" component={Homepage} />
+                <Route exact path="/about" component={About} />
+              </div>
+            </Router>
+            <Footer />
+          </div>
+        </MuiThemeProvider>
     )
   }
 }
 
-export default App;
+injectTapEventPlugin()
+
+export default App
