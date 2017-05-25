@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import './App.css'
 import AppBar from 'material-ui/AppBar'
+import Home from '../Home'
 import Footer from '../Footer'
 import SearchForm from '../SearchForm'
 import injectTapEventPlugin from 'react-tap-event-plugin'
@@ -16,7 +17,7 @@ class App extends Component {
         <MuiThemeProvider>
           <div>
             <AppBar />
-            <SearchForm />
+            <Home />
             <Footer />
           </div>
         </MuiThemeProvider>
